@@ -1,0 +1,20 @@
+Package: causalGBN
+Remotes: rjbgoudie/parental
+Title: A package for estimating causal Gaussian Bayesian Networks
+Version: 0.1
+Authors@R: 
+    person(given = "Gregory",
+           family = "Nuel",
+           role = c("aut","cre"),
+           email = "nuel@math.cnrs.fr",
+           comment = c(url = "http://nuel.perso.math.cnrs.fr"))
+Description: The packages allows to estimate causal Gaussian Bayesian Networks from a mixture of observation and intervention experiment. When the DAG structure G is known, parameters are estimated through simple linear regression. In the case where the DAG G is unknown, the posterior distribution P(G | data) is derived through a Metropolis-Hasting algorithm (MC3) where the score of each DAG G is obtained through a BIC (eBIC by default).
+License: GPL-3
+Encoding: UTF-8
+Depends: parental, MASS, hashmap, utils, stats
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
